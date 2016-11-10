@@ -25,7 +25,13 @@ namespace Trivia_Literaria.Vista
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             Datos.clsDatos objD = new Datos.clsDatos();
-            objD.AgregarEquipo_Trivia(cmbTrivia.Text,cmbEquipos.Text);
+            try
+            {
+                objD.AgregarEquipo_Trivia(cmbTrivia.Text, cmbEquipos.Text);
+                MessageBox.Show("Se ha agregado el equipo " + cmbEquipos.Text + " a la " + cmbTrivia.Text);
+            }catch(Exception ex){
+                MessageBox.Show("No se pudo agregar");
+            }
         }
     }
 }
