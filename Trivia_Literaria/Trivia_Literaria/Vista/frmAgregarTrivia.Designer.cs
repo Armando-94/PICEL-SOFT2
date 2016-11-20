@@ -70,20 +70,15 @@
             // 
             // cmbLibros
             // 
+            this.cmbLibros.Enabled = false;
             this.cmbLibros.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLibros.FormattingEnabled = true;
-            this.cmbLibros.Items.AddRange(new object[] {
-            "1984",
-            "Ángeles y Demonios",
-            "Doctor Sueño",
-            "Fausto",
-            "La chica del tren",
-            "Memorias de una Geisha",
-            "Yo antes de ti"});
             this.cmbLibros.Location = new System.Drawing.Point(167, 65);
             this.cmbLibros.Name = "cmbLibros";
             this.cmbLibros.Size = new System.Drawing.Size(178, 26);
             this.cmbLibros.TabIndex = 2;
+            this.cmbLibros.SelectionChangeCommitted += new System.EventHandler(this.cmbLibros_SelectionChangeCommitted);
+            this.cmbLibros.TextChanged += new System.EventHandler(this.cmbLibros_TextChanged);
             this.cmbLibros.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbLibros_KeyPress);
             // 
             // label2
@@ -100,6 +95,7 @@
             // 
             this.gbTrivia.Controls.Add(this.rdbTriviaB);
             this.gbTrivia.Controls.Add(this.rdbTriviaA);
+            this.gbTrivia.Enabled = false;
             this.gbTrivia.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbTrivia.Location = new System.Drawing.Point(33, 107);
             this.gbTrivia.Name = "gbTrivia";
@@ -118,6 +114,7 @@
             this.rdbTriviaB.TabStop = true;
             this.rdbTriviaB.Text = "B";
             this.rdbTriviaB.UseVisualStyleBackColor = true;
+            this.rdbTriviaB.CheckedChanged += new System.EventHandler(this.rdbTriviaB_CheckedChanged);
             // 
             // rdbTriviaA
             // 
@@ -129,9 +126,11 @@
             this.rdbTriviaA.TabStop = true;
             this.rdbTriviaA.Text = "A";
             this.rdbTriviaA.UseVisualStyleBackColor = true;
+            this.rdbTriviaA.CheckedChanged += new System.EventHandler(this.rdbTriviaA_CheckedChanged);
             // 
             // btnAgregar
             // 
+            this.btnAgregar.Enabled = false;
             this.btnAgregar.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.Location = new System.Drawing.Point(208, 126);
             this.btnAgregar.Name = "btnAgregar";
@@ -143,27 +142,30 @@
             // 
             // dgvTrivia
             // 
+            this.dgvTrivia.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvTrivia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTrivia.Enabled = false;
             this.dgvTrivia.Location = new System.Drawing.Point(33, 203);
             this.dgvTrivia.Name = "dgvTrivia";
-            this.dgvTrivia.Size = new System.Drawing.Size(354, 169);
+            this.dgvTrivia.Size = new System.Drawing.Size(354, 213);
             this.dgvTrivia.TabIndex = 6;
             // 
             // btnAcept
             // 
             this.btnAcept.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAcept.Location = new System.Drawing.Point(50, 390);
+            this.btnAcept.Location = new System.Drawing.Point(50, 422);
             this.btnAcept.Name = "btnAcept";
             this.btnAcept.Size = new System.Drawing.Size(83, 39);
             this.btnAcept.TabIndex = 5;
             this.btnAcept.Text = "&Aceptar";
             this.btnAcept.UseVisualStyleBackColor = true;
+            this.btnAcept.Visible = false;
             this.btnAcept.Click += new System.EventHandler(this.btnAcept_Click);
             // 
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(238, 390);
+            this.btnCancelar.Location = new System.Drawing.Point(238, 422);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(83, 39);
             this.btnCancelar.TabIndex = 5;
@@ -175,7 +177,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(403, 441);
+            this.ClientSize = new System.Drawing.Size(403, 473);
             this.Controls.Add(this.dgvTrivia);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAcept);
@@ -187,6 +189,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmAgregarTrivia";
             this.Text = "Agregar Trivia";
+            this.Load += new System.EventHandler(this.frmAgregarTrivia_Load);
             this.gbTrivia.ResumeLayout(false);
             this.gbTrivia.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTrivia)).EndInit();

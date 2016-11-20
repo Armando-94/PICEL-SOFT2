@@ -31,13 +31,12 @@ namespace Trivia_Literaria
         {
 
         }
-        #endregion
 
         private void btnCancelar_Click_1(object sender, EventArgs e)
         {
-            //Salir
-            this.Close();
+            
         }
+        #endregion
 
         /*Aquí se controla el tamaño y posición de los elementos de la ventana dependiendo del
         número de integrantes*/
@@ -58,18 +57,30 @@ namespace Trivia_Literaria
                         btnAceptar.Location = new Point(32,307);
                         btnCancelar.Location = new Point(249, 307);
                         this.Height= 388;
+                        txtLibro3.Enabled = true;
+                        txtNombre3.Enabled = true;
                         break;
                     case 4:
                         gbEquipo.Height = 217;
                         btnAceptar.Location = new Point(32,357);
                         btnCancelar.Location = new Point(249, 357);
                         this.Height= 438;
+                        txtLibro3.Enabled = true;
+                        txtNombre3.Enabled = true;
+                        txtLibro4.Enabled = true;
+                        txtNombre4.Enabled = true;
                         break;
                     case 5:
                         gbEquipo.Height = 267;
                         btnAceptar.Location = new Point(32,407);
                         btnCancelar.Location = new Point(249, 407);
                         this.Height= 488;
+                        txtLibro3.Enabled = true;
+                        txtNombre3.Enabled = true;
+                        txtLibro4.Enabled = true;
+                        txtNombre4.Enabled = true;
+                        txtLibro5.Enabled = true;
+                        txtNombre5.Enabled = true;
                         break;
                 }
             }
@@ -110,6 +121,12 @@ namespace Trivia_Literaria
         private void cmbTrivia_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true;
+        }
+
+        private void btnCancelar_Click_2(object sender, EventArgs e)
+        {
+            //Salir
+            this.Close();
         }
     }
 }

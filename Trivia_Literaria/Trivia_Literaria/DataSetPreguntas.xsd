@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetPreguntas" targetNamespace="http://tempuri.org/DataSetPreguntas.xsd" xmlns:mstns="http://tempuri.org/DataSetPreguntas.xsd" xmlns="http://tempuri.org/DataSetPreguntas.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.Trivia_Literaria.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PreguntasTableAdapter" GeneratorDataComponentClassName="PreguntasTableAdapter" Name="Preguntas" UserDataComponentName="PreguntasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT * FROM `preguntas`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idPreguntas" DataSetColumn="idPreguntas" />
+              <Mapping SourceColumn="Utilizada" DataSetColumn="Utilizada" />
+              <Mapping SourceColumn="Combo" DataSetColumn="Combo" />
+              <Mapping SourceColumn="Respuesta" DataSetColumn="Respuesta" />
+              <Mapping SourceColumn="Pregunta" DataSetColumn="Pregunta" />
+              <Mapping SourceColumn="Libros_idLibros" DataSetColumn="Libros_idLibros" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetPreguntas" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetPreguntas" msprop:Generator_UserDSName="DataSetPreguntas">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Preguntas" msprop:Generator_TableClassName="PreguntasDataTable" msprop:Generator_TableVarName="tablePreguntas" msprop:Generator_TablePropName="Preguntas" msprop:Generator_RowDeletingName="PreguntasRowDeleting" msprop:Generator_RowChangingName="PreguntasRowChanging" msprop:Generator_RowEvHandlerName="PreguntasRowChangeEventHandler" msprop:Generator_RowDeletedName="PreguntasRowDeleted" msprop:Generator_UserTableName="Preguntas" msprop:Generator_RowChangedName="PreguntasRowChanged" msprop:Generator_RowEvArgName="PreguntasRowChangeEvent" msprop:Generator_RowClassName="PreguntasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idPreguntas" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidPreguntas" msprop:Generator_ColumnPropNameInRow="idPreguntas" msprop:Generator_ColumnPropNameInTable="idPreguntasColumn" msprop:Generator_UserColumnName="idPreguntas" type="xs:int" minOccurs="0" />
+              <xs:element name="Utilizada" msprop:Generator_ColumnVarNameInTable="columnUtilizada" msprop:Generator_ColumnPropNameInRow="Utilizada" msprop:Generator_ColumnPropNameInTable="UtilizadaColumn" msprop:Generator_UserColumnName="Utilizada" type="xs:short" />
+              <xs:element name="Combo" msprop:Generator_ColumnVarNameInTable="columnCombo" msprop:Generator_ColumnPropNameInRow="Combo" msprop:Generator_ColumnPropNameInTable="ComboColumn" msprop:Generator_UserColumnName="Combo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Respuesta" msprop:Generator_ColumnVarNameInTable="columnRespuesta" msprop:Generator_ColumnPropNameInRow="Respuesta" msprop:Generator_ColumnPropNameInTable="RespuestaColumn" msprop:Generator_UserColumnName="Respuesta">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32767" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Pregunta" msprop:Generator_ColumnVarNameInTable="columnPregunta" msprop:Generator_ColumnPropNameInRow="Pregunta" msprop:Generator_ColumnPropNameInTable="PreguntaColumn" msprop:Generator_UserColumnName="Pregunta">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32767" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Libros_idLibros" msprop:Generator_ColumnVarNameInTable="columnLibros_idLibros" msprop:Generator_ColumnPropNameInRow="Libros_idLibros" msprop:Generator_ColumnPropNameInTable="Libros_idLibrosColumn" msprop:Generator_UserColumnName="Libros_idLibros" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:Preguntas" />
+      <xs:field xpath="mstns:idPreguntas" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

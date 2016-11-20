@@ -39,7 +39,6 @@
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manualDeUsoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agregarEquiposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,11 +60,11 @@
             // 
             this.triviaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.agregarToolStripMenuItem,
-            this.consultarToolStripMenuItem,
-            this.agregarEquiposToolStripMenuItem});
+            this.consultarToolStripMenuItem});
             this.triviaToolStripMenuItem.Name = "triviaToolStripMenuItem";
             this.triviaToolStripMenuItem.Size = new System.Drawing.Size(62, 23);
             this.triviaToolStripMenuItem.Text = "Trivia";
+            this.triviaToolStripMenuItem.Click += new System.EventHandler(this.triviaToolStripMenuItem_Click);
             // 
             // agregarToolStripMenuItem
             // 
@@ -131,13 +130,6 @@
             this.manualDeUsoToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
             this.manualDeUsoToolStripMenuItem.Text = "Manual de uso";
             // 
-            // agregarEquiposToolStripMenuItem
-            // 
-            this.agregarEquiposToolStripMenuItem.Name = "agregarEquiposToolStripMenuItem";
-            this.agregarEquiposToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
-            this.agregarEquiposToolStripMenuItem.Text = "Agregar Equipos";
-            this.agregarEquiposToolStripMenuItem.Click += new System.EventHandler(this.agregarEquiposToolStripMenuItem_Click);
-            // 
             // frmControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -167,6 +159,5 @@
         private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manualDeUsoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem agregarEquiposToolStripMenuItem;
     }
 }

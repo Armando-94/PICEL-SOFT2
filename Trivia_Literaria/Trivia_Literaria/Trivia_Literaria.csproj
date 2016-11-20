@@ -52,6 +52,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSetPreguntas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPreguntas.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Datos\clsDatos.cs" />
     <Compile Include="frmGanadores.cs">
       <SubType>Form</SubType>
@@ -62,14 +67,10 @@
     <Compile Include="Pojos\clsAgregarEquipo.cs" />
     <Compile Include="Pojos\clsAgregarTrivia.cs" />
     <Compile Include="Pojos\clsEquipos.cs" />
+    <Compile Include="Pojos\clsLibros.cs" />
+    <Compile Include="Pojos\clsLibros_Trivia.cs" />
     <Compile Include="Pojos\clsPreguntas.cs" />
     <Compile Include="Pojos\clsScore.cs" />
-    <Compile Include="Vista\frmAgregarEquiposTrivia.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\frmAgregarEquiposTrivia.Designer.cs">
-      <DependentUpon>frmAgregarEquiposTrivia.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vista\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +133,12 @@
     <Compile Include="Vista\frmReporte.Designer.cs">
       <DependentUpon>frmReporte.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\frmReportePreguntas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\frmReportePreguntas.Designer.cs">
+      <DependentUpon>frmReportePreguntas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\frmRobo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,9 +154,7 @@
     <EmbeddedResource Include="frmGanadores.resx">
       <DependentUpon>frmGanadores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\frmAgregarEquiposTrivia.resx">
-      <DependentUpon>frmAgregarEquiposTrivia.cs</DependentUpon>
-    </EmbeddedResource>
+    <EmbeddedResource Include="ReportPreguntas.rdlc" />
     <EmbeddedResource Include="Vista\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -190,12 +195,27 @@
     <EmbeddedResource Include="Vista\frmReporte.resx">
       <DependentUpon>frmReporte.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\frmReportePreguntas.resx">
+      <DependentUpon>frmReportePreguntas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\frmRobo.resx">
       <DependentUpon>frmRobo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\frmScore.resx">
       <DependentUpon>frmScore.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DataSetPreguntas.xsc">
+      <DependentUpon>DataSetPreguntas.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetPreguntas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPreguntas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetPreguntas.xss">
+      <DependentUpon>DataSetPreguntas.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\Trivia_Literaria.Datos.clsDatos.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

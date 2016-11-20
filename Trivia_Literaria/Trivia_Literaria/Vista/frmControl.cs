@@ -57,13 +57,18 @@ namespace Trivia_Literaria
             #endregion
         }
 
-        private void agregarEquiposToolStripMenuItem_Click(object sender, EventArgs e)
+        /*private void agregarEquiposToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Vista.frmAgregarEquiposTrivia objAET = new Vista.frmAgregarEquiposTrivia();
             objAET.MdiParent = this.MdiParent;
             this.Hide();
             objAET.ShowDialog();
             this.Show();
+        }*/
+
+        private void triviaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
