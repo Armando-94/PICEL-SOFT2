@@ -69,14 +69,14 @@
             // agregarToolStripMenuItem
             // 
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.agregarToolStripMenuItem.Text = "Agregar";
             this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
             // 
             // consultarToolStripMenuItem
             // 
             this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.consultarToolStripMenuItem.Text = "Consultar";
             this.consultarToolStripMenuItem.Click += new System.EventHandler(this.consultarToolStripMenuItem_Click);
             // 
@@ -123,12 +123,14 @@
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
+            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
             // manualDeUsoToolStripMenuItem
             // 
             this.manualDeUsoToolStripMenuItem.Name = "manualDeUsoToolStripMenuItem";
             this.manualDeUsoToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
             this.manualDeUsoToolStripMenuItem.Text = "Manual de uso";
+            this.manualDeUsoToolStripMenuItem.Click += new System.EventHandler(this.manualDeUsoToolStripMenuItem_Click);
             // 
             // frmControl
             // 

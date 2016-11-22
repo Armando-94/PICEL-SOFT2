@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+
 
 namespace Trivia_Literaria
 {
@@ -69,6 +71,42 @@ namespace Trivia_Literaria
         private void triviaToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void manualDeUsoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            #region Abrir manual en el navegador
+            Console.WriteLine(Environment.NewLine);
+            string rutaActual = @"..\";
+            Directory.SetCurrentDirectory(rutaActual);
+            // Muestra la ruta actual:
+            //Console.WriteLine("El directorio de trabajo actual es: {0}", Directory.GetCurrentDirectory());
+            //Console.WriteLine();
+            // Cambiamos la ruta actual:
+            Directory.SetCurrentDirectory(@"..\Manual");
+            // Muestra la nueva ruta de trabajo:
+            //Console.WriteLine("El directorio de trabajo actual es: {0}", Directory.GetCurrentDirectory());
+            Console.WriteLine(Environment.NewLine);
+
+            try
+            {
+                string url = Directory.GetCurrentDirectory();
+                url += @"\" + "index.html";
+                Console.WriteLine("URL: {0}",url);
+                System.Diagnostics.Process.Start(url);
+            }
+            catch {
+                MessageBox.Show("Contacte al administrador, archivo no encontrado","Error 404",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation,
+                    MessageBoxDefaultButton.Button1);
+            }
+#endregion
+        }
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Software realizado por:            \nSky Software Systems\n®2016 Todos los derechos reservados", "Acerca de");
         }
     }
 }
