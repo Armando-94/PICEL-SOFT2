@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<link href="css/styles.css" rel="stylesheet">
+<meta charset="utf-8">
+<title>Manual de usuario</title>
+</head>
+
+<body>	
+<div id="ModoJuego" align="center">
+<pre>Desde la interfaz mostrada en la siguiente imagen se debera elegir con 
+cual de las dos posibles eliminatorias se jugara
+</pre>
+<img src="img/1.png">
+<pre>
+una vez dentro de cualquiera de las dos se nos presentara la siguiente 
+pantalla, donde cada boton numerado representa una posible pregunta
+a elegir, seleccionada aleatoriamente de la base de datos. 
+</pre>
+<img src="img/2.png">
+
+<pre>
+una vez el jugador de click en alguno de los botones el tiempo comenzara a correr
+y la pregunta, el libro al que pertenece y el ID de la base de datos se mostraran en pantalla
+bloqueandose las demas opciones de pregunta
+<img src="img/3.png">
+</pre>
+
+<pre>
+El participante tiene 25 segundos para responder a la pregunta, teniendo una advertencia auditiva 
+al restar 5 segundos en el temporizador (al mostrar 20 seg.).
+
+A partir de los 15 segundos la opcion de responder sera habilita, con dos botones: correcto e incorrecto
+<img src="img/4.png">
+
+</pre>
+
+<pre>
+<h1>Correcto</h1>
+Agrega un punto al equipo en turno y muestra la respuesta correcta
+</pre>
+
+<pre>
+<h1>Inorrecto</h1>
+Mostrara tres botones:
+<ul>
+<li>Siguiente: en caso de que ningun equipo desee hacer robo</li>
+<li>Respuesta: muestra la respuesta esperada, tambien en caso de que no se desee hacer robo</li>
+<li>Robo: entra en esta sbdivision del modo de juego ver mas <a href="#Robo">Robo</a></li>
+</ul>
+</pre>
+
+
+<pre>
+Al finalizar el tiempo, se muestran tres botones siendo: siguiente, respuesta y robo
+</pre>
+
+<img src="img/5.png">
+
+<pre>
+<h1>Respuesta</h1>
+Mostrara la respuesta esperada para la pregunta en curso y dejara solamente acctivo el boton de siguiente
+<img src="img/6.png">
+</pre>
+
+<pre>
+<h1>siguiente</h1>
+Este boton permite continuar con la ronda, dando paso al turno del siguiente equipo.
+Y mostrando un aviso con el numero de la ronda actual, cuando una de estas se finalice
+</pre>
+
+<pre>
+En caso de que se presente una inconformidad por parte del equipo, o bien, la pregunta 
+presentada sea demasiado larga para leer en el tiempo establecido, el administrador puede
+pulsar sobre la opcion de aclaracion para que el tiempo se detenga hasta que este boton vuelva a ser presionado
+</pre>
+
+<pre>El proceso se repite hasta que alguno de los equipos alcanze un total de 10 puntos.</pre>
+</div>
+<br><br><br><br><br><br><br>
+<div id="Robo" align="center">
+<pre><h1>Robo de puntos</h1>
+Despues de haberse marcado la pregunta como respuesta equivocada y dar click en el boton de robo se
+presentara una pantalla con un contador regresivo de 3, esto como medida interna para dar mayor 
+equidad en la elección del participante que va a robar
+
+Un combo contienen la lista de equipo que pueden hacer el robo
+
+Una vez seleccionado el equipo que realizara el robo, el contador comenzara a correr.
+El equipo tiene 15 segundos para responder a la pregunta, la cual no sera mostrada
+hasta que se marque la opcion de correcto o incorrecto.
+
+<img src="img/7.png">
+
+Posterior a esto se vulve a la pantalla de juego para continuar o iniciar una nueva ronda
+
+<a href="#ModoJuego">Regresar</a>
+
+
+
+</pre>
+</div>
+
+<div id="Administracion" align="center">
+<a href="#ModoJuego">Volver a Inicio</a>
+<pre>
+<h1>Vista de administrador</h1>Al iniciar la ventana de administracion, se te pedira ingresar una contraseña, tu admin. debio 
+proporcionarcela al encargado, contactalo
+<img src="img/8.png">
+<a href="#Admnistracion">Volver a administracion</a>
+<a href="#ModoJuego">Volver a Inicio</a>
+
+</pre>
+
+</div>
+
+
+<div id="Trivia" align="center">
+<pre>
+Desde este modulo puedes eligr hacer dos acciones
+Construir una trivia desde cero o consultar la creadas
+<img src="img/9.png">
+<a href="#Administracion">Volver a administracion</a>
+<a href="#ModoJuego">Volver a Inicio</a>
+
+</pre>
+
+<pre>
+<h1>Agregar</h1>
+Esta es la vista principal para construir una trivia
+<img src="img/10.png">
+
+Lo primero que debes hacer para agregar una nueva, es elegir en el listado cual de las dos opciones 
+vas a construir
+
+<img src="img/11.png">
+Al hacerlo el listado se desactivara
+
+En seguida debes elegir los libros que incluira, para esto, en el segundo listado
+elige cualquier libro, despues selecciona una de los dos posibles conjuntos de preguntas (A o B),
+una ves seguro de que estas conforme con la asignacion, presiona Agregar
+
+<img src="img/12.png">
+
+El sistema realizara su proceso y agregara el libro y el conjunto en el cuadro de la parte inferior
+<img src="img/13.png">
+
+Repite este proceso con todo los libros restantes, hasta que tengas un resultado similar a este 
+y el boton de aceptar se active, al hacerlo la trivia quedara dada de alta
+<img src="img/14.png">
+
+una pequeña confirmacion saltara para mostrar que todo se realizo correctamente
+<img src="img/15.png">
+<a href="#Administracion">Volver a administracion</a>
+<a href="#ModoJuego">Volver a Inicio</a>
+
+</pre>
+
+<pre>
+<h1>Consultar</h1>
+Desde esta opción podemos consultar que equipos estan dados de alta en cada trivia
+Solo se necesita seleccionar seleccionar cual de las dos trivias 
+se desea ver
+<img src="img/16.png">
+</pre>
+<pre>
+<a href="#Administracion">Volver a administracion</a>
+<a href="#ModoJuego">Volver a Inicio</a>
+     </pre>   
+     </div>
+
+<div id="Equipos"></div>        
+
+<div id="Reportes"></div>
+
+</body>
+</html>
