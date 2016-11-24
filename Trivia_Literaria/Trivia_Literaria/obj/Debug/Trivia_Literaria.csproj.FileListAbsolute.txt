@@ -23,3 +23,6 @@ C:\Users\jsalv\Documents\Visual Studio 2013\Projects\PICEL-FinalV1\Trivia_Litera
 C:\Users\jsalv\Documents\Visual Studio 2013\Projects\PICEL-FinalV1\Trivia_Literaria\Trivia_Literaria\obj\Debug\Trivia_Literaria.exe
 C:\Users\jsalv\Documents\Visual Studio 2013\Projects\PICEL-FinalV1\Trivia_Literaria\Trivia_Literaria\obj\Debug\Trivia_Literaria.pdb
 C:\Users\jsalv\Documents\Visual Studio 2013\Projects\PICEL-FinalV1\Trivia_Literaria\Trivia_Literaria\bin\Debug\MySql.Data.dll
+C:\Users\Miguel\Source\Repos\PICEL-SOFT2\Trivia_Literaria\Trivia_Literaria\bin\Debug\Trivia_Literaria.exe.config
+C:\Users\Miguel\Source\Repos\PICEL-SOFT2\Trivia_Literaria\Trivia_Literaria\obj\Debug\Trivia_Literaria.exe
+C:\Users\Miguel\Source\Repos\PICEL-SOFT2\Trivia_Literaria\Trivia_Literaria\obj\Debug\Trivia_Literaria.pdb

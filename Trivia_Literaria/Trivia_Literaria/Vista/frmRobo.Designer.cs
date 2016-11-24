@@ -177,6 +177,8 @@
             this.Controls.Add(this.txtPregunta);
             this.Controls.Add(this.lblEquipo);
             this.Controls.Add(this.cmbEquipos);
+            this.MaximumSize = new System.Drawing.Size(461, 398);
+            this.MinimumSize = new System.Drawing.Size(461, 398);
             this.Name = "frmRobo";
             this.Text = "Robo";
             this.Load += new System.EventHandler(this.frmRobo_Load);
