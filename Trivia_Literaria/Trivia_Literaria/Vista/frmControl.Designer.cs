@@ -39,6 +39,7 @@
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manualDeUsoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarEquiposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,23 +61,23 @@
             // 
             this.triviaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.agregarToolStripMenuItem,
-            this.consultarToolStripMenuItem});
+            this.consultarToolStripMenuItem,
+            this.agregarEquiposToolStripMenuItem});
             this.triviaToolStripMenuItem.Name = "triviaToolStripMenuItem";
             this.triviaToolStripMenuItem.Size = new System.Drawing.Size(62, 23);
             this.triviaToolStripMenuItem.Text = "Trivia";
-            this.triviaToolStripMenuItem.Click += new System.EventHandler(this.triviaToolStripMenuItem_Click);
             // 
             // agregarToolStripMenuItem
             // 
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
             this.agregarToolStripMenuItem.Text = "Agregar";
             this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
             // 
             // consultarToolStripMenuItem
             // 
             this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
             this.consultarToolStripMenuItem.Text = "Consultar";
             this.consultarToolStripMenuItem.Click += new System.EventHandler(this.consultarToolStripMenuItem_Click);
             // 
@@ -123,14 +124,19 @@
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
-            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
             // manualDeUsoToolStripMenuItem
             // 
             this.manualDeUsoToolStripMenuItem.Name = "manualDeUsoToolStripMenuItem";
             this.manualDeUsoToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
             this.manualDeUsoToolStripMenuItem.Text = "Manual de uso";
-            this.manualDeUsoToolStripMenuItem.Click += new System.EventHandler(this.manualDeUsoToolStripMenuItem_Click);
+            // 
+            // agregarEquiposToolStripMenuItem
+            // 
+            this.agregarEquiposToolStripMenuItem.Name = "agregarEquiposToolStripMenuItem";
+            this.agregarEquiposToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
+            this.agregarEquiposToolStripMenuItem.Text = "Agregar Equipos";
+            this.agregarEquiposToolStripMenuItem.Click += new System.EventHandler(this.agregarEquiposToolStripMenuItem_Click);
             // 
             // frmControl
             // 
@@ -161,5 +167,6 @@
         private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manualDeUsoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agregarEquiposToolStripMenuItem;
     }
 }
