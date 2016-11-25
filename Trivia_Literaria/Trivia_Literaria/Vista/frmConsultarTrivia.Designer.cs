@@ -33,9 +33,9 @@
             this.dgvEquipos = new System.Windows.Forms.DataGridView();
             this.Equipos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvEquipos_Combo = new System.Windows.Forms.DataGridView();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.Libros = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Combo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEquipos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEquipos_Combo)).BeginInit();
             this.SuspendLayout();
@@ -43,10 +43,12 @@
             // lblTrivia
             // 
             this.lblTrivia.AutoSize = true;
-            this.lblTrivia.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrivia.BackColor = System.Drawing.Color.Transparent;
+            this.lblTrivia.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Italic);
+            this.lblTrivia.ForeColor = System.Drawing.Color.White;
             this.lblTrivia.Location = new System.Drawing.Point(13, 13);
             this.lblTrivia.Name = "lblTrivia";
-            this.lblTrivia.Size = new System.Drawing.Size(48, 18);
+            this.lblTrivia.Size = new System.Drawing.Size(60, 26);
             this.lblTrivia.TabIndex = 0;
             this.lblTrivia.Text = "Trivia";
             // 
@@ -88,17 +90,6 @@
             this.dgvEquipos_Combo.Size = new System.Drawing.Size(244, 123);
             this.dgvEquipos_Combo.TabIndex = 2;
             // 
-            // btnSalir
-            // 
-            this.btnSalir.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(180, 355);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(80, 27);
-            this.btnSalir.TabIndex = 3;
-            this.btnSalir.Text = "&Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
             // Libros
             // 
             this.Libros.HeaderText = "Libros";
@@ -109,10 +100,25 @@
             this.Combo.HeaderText = "Combo";
             this.Combo.Name = "Combo";
             // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.Transparent;
+            this.btnSalir.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Italic);
+            this.btnSalir.ForeColor = System.Drawing.Color.White;
+            this.btnSalir.Image = global::Trivia_Literaria.Properties.Resources.black_glossy_button_hi;
+            this.btnSalir.Location = new System.Drawing.Point(167, 340);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(93, 42);
+            this.btnSalir.TabIndex = 3;
+            this.btnSalir.Text = "&Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // frmConsultarTrivia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Trivia_Literaria.Properties.Resources._12504403_cortinas_luminosas_en_el_concepto_de_teatro;
             this.ClientSize = new System.Drawing.Size(276, 394);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.dgvEquipos_Combo);
