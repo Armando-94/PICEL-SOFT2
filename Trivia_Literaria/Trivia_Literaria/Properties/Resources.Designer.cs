@@ -73,6 +73,16 @@ namespace Trivia_Literaria.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _12504403_cortinas_luminosas_en_el_concepto_de_teatro1 {
+            get {
+                object obj = ResourceManager.GetObject("12504403-cortinas-luminosas-en-el-concepto-de-teatro1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap black_glossy_button_hi {
             get {
                 object obj = ResourceManager.GetObject("black-glossy-button-hi", resourceCulture);
@@ -86,6 +96,26 @@ namespace Trivia_Literaria.Properties {
         internal static System.Drawing.Bitmap circulo_de_energia_naranja_sobre_un_fondo_negro_1053_596 {
             get {
                 object obj = ResourceManager.GetObject("circulo-de-energia-naranja-sobre-un-fondo-negro_1053-596", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DSC_0078 {
+            get {
+                object obj = ResourceManager.GetObject("DSC_0078", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fd {
+            get {
+                object obj = ResourceManager.GetObject("fd", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,6 +153,26 @@ namespace Trivia_Literaria.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap libro_mágico1 {
+            get {
+                object obj = ResourceManager.GetObject("libro mágico1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap libro_mágico2 {
+            get {
+                object obj = ResourceManager.GetObject("libro mágico2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maxresdefault {
             get {
                 object obj = ResourceManager.GetObject("maxresdefault", resourceCulture);
@@ -133,9 +183,39 @@ namespace Trivia_Literaria.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap maxresdefault1 {
+            get {
+                object obj = ResourceManager.GetObject("maxresdefault1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap maxresdefault2 {
+            get {
+                object obj = ResourceManager.GetObject("maxresdefault2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap open_book_icon_free_books_and_education_13 {
             get {
                 object obj = ResourceManager.GetObject("open-book-icon-free-books-and-education-13", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap qwe {
+            get {
+                object obj = ResourceManager.GetObject("qwe", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -19,8 +19,8 @@ namespace Trivia_Literaria.Vista
 
         private void frmReportePreguntas_Load(object sender, EventArgs e)
         {
-
-            this.reportViewer1.RefreshReport();
+            Datos.clsDatos objD=new Datos.clsDatos();
+            dgvReporte.DataSource = objD.ReportePreguntas();
         }
     }
 }

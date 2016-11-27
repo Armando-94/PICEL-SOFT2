@@ -34,9 +34,9 @@
   <ItemGroup>
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
-    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\MySql.Data.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Installer for Windows\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -62,14 +62,13 @@
     <Compile Include="Pojos\clsAgregarEquipo.cs" />
     <Compile Include="Pojos\clsAgregarTrivia.cs" />
     <Compile Include="Pojos\clsEquipos.cs" />
+    <Compile Include="Pojos\clsLibros.cs" />
+    <Compile Include="Pojos\clsLibros_Trivia.cs" />
+    <Compile Include="Pojos\clsLibro_Combo.cs" />
+    <Compile Include="Pojos\clsParticipantes.cs" />
     <Compile Include="Pojos\clsPreguntas.cs" />
+    <Compile Include="Pojos\clsPreguntasReporte.cs" />
     <Compile Include="Pojos\clsScore.cs" />
-    <Compile Include="Vista\frmAgregarEquiposTrivia.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\frmAgregarEquiposTrivia.Designer.cs">
-      <DependentUpon>frmAgregarEquiposTrivia.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vista\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,11 +125,11 @@
     <Compile Include="Vista\frmPadre.Designer.cs">
       <DependentUpon>frmPadre.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\frmReporte.cs">
+    <Compile Include="Vista\frmReportePreguntas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\frmReporte.Designer.cs">
-      <DependentUpon>frmReporte.cs</DependentUpon>
+    <Compile Include="Vista\frmReportePreguntas.Designer.cs">
+      <DependentUpon>frmReportePreguntas.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\frmRobo.cs">
       <SubType>Form</SubType>
@@ -147,9 +146,7 @@
     <EmbeddedResource Include="frmGanadores.resx">
       <DependentUpon>frmGanadores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\frmAgregarEquiposTrivia.resx">
-      <DependentUpon>frmAgregarEquiposTrivia.cs</DependentUpon>
-    </EmbeddedResource>
+    <EmbeddedResource Include="ReportPreguntas.rdlc" />
     <EmbeddedResource Include="Vista\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,8 +184,8 @@
     <EmbeddedResource Include="Vista\frmPadre.resx">
       <DependentUpon>frmPadre.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\frmReporte.resx">
-      <DependentUpon>frmReporte.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\frmReportePreguntas.resx">
+      <DependentUpon>frmReportePreguntas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\frmRobo.resx">
       <DependentUpon>frmRobo.cs</DependentUpon>
@@ -196,6 +193,7 @@
     <EmbeddedResource Include="Vista\frmScore.resx">
       <DependentUpon>frmScore.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\Trivia_Literaria.Datos.clsDatos.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -232,6 +230,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fondo_escenario_P1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DSC_0078.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libro mágico2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libro mágico1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qwe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12504403-cortinas-luminosas-en-el-concepto-de-teatro1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

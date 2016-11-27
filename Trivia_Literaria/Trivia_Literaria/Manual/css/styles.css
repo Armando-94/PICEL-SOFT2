@@ -7,15 +7,64 @@ margin-left:0;
 }
 
 
-pre{
+pre,table{
 	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size:16px;
+	
+	}
+	#Tab{
+		width:100%;
+		height:100%;
+		}
+	
+	
+#Equipos,#Reportes{
+	position:absolute;
+	left:20%;
+	text-align:justify;
 	}
 	
-img {
+.listaCatalogo
+	{
+		width:50%;
+		height:100%;
+	border-collapse:collapse;
+	/*Pra quitar espacios entre celdas*/
+	}
+.listaCatalogo tr:first-child
+	{
+	background-color:#6699FF;
+	color:#003366;	
+	border-top:3px solid #0000FF;
+	}
+
+.listaCatalogo td,.listaCatalogo th
+	{
+	padding:10px;
 	
 	}
 
-#ModoJuego{
-		
+.listaCatalogo td
+	{
+	background-color:#CCCCFF;
 	}
+	
+.listaCatalogo tr{
+	border-top: 1px solid #fff;
+
+}
+.listaCatalogo tr:nth-child(even) td{ 
+	background-color:#fff;
+
+}
+
+.listaCatalogo tr:nth-child(even):hover td{ 
+	background-color:#ddd;
+
+}
+.listaCatalogo tr:nth-child(odd):hover td{ 
+	background-color:#97affd;
+}
+
+
+	

@@ -28,32 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.dgvReporte = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReporte)).BeginInit();
             this.SuspendLayout();
             // 
-            // reportViewer1
+            // dgvReporte
             // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(868, 414);
-            this.reportViewer1.TabIndex = 0;
+            this.dgvReporte.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvReporte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReporte.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvReporte.Location = new System.Drawing.Point(0, 0);
+            this.dgvReporte.Name = "dgvReporte";
+            this.dgvReporte.Size = new System.Drawing.Size(868, 414);
+            this.dgvReporte.TabIndex = 0;
             // 
             // frmReportePreguntas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(868, 414);
-            this.Controls.Add(this.reportViewer1);
+            this.Controls.Add(this.dgvReporte);
             this.Name = "frmReportePreguntas";
-            this.Text = "frmReportePreguntas";
+            this.Text = "Reporte Preguntas";
             this.Load += new System.EventHandler(this.frmReportePreguntas_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReporte)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.DataGridView dgvReporte;
+
     }
 }

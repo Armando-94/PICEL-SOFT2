@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<link href="css/styles.css" rel="stylesheet">
+
+<meta charset="utf-8">
+<title>Modo de juego</title>
+</head>
+
+<body>
+<div id="ModoJuego" align="center">
+<a href="index.html">Volver a Inicio</a>
+<pre>Desde la interfaz mostrada en la siguiente imagen se debera elegir con 
+cual de las dos posibles eliminatorias se jugara
+</pre>
+<img src="img/1.png">
+<pre>
+una vez dentro de cualquiera de las dos se nos presentara la siguiente 
+pantalla, donde cada boton numerado representa una posible pregunta
+a elegir, seleccionada aleatoriamente de la base de datos. 
+</pre>
+<img src="img/2.png">
+
+<pre>
+una vez el jugador de click en alguno de los botones el tiempo comenzara a correr
+y la pregunta, el libro al que pertenece y el ID de la base de datos se mostraran en pantalla
+bloqueandose las demas opciones de pregunta
+<img src="img/3.png">
+</pre>
+
+<pre>
+El participante tiene 25 segundos para responder a la pregunta, teniendo una advertencia auditiva 
+al restar 5 segundos en el temporizador (al mostrar 20 seg.).
+
+A partir de los 15 segundos la opcion de responder sera habilita, con dos botones: correcto e incorrecto
+<img src="img/4.png">
+
+</pre>
+
+<pre>
+<h1>Correcto</h1>
+Agrega un punto al equipo en turno y muestra la respuesta correcta
+</pre>
+
+<pre>
+<h1>Inorrecto</h1>
+Mostrara tres botones:
+<ul>
+<li>Siguiente: en caso de que ningun equipo desee hacer robo</li>
+<li>Respuesta: muestra la respuesta esperada, tambien en caso de que no se desee hacer robo</li>
+<li>Robo: entra en esta sbdivision del modo de juego ver mas <a href="#Robo">Robo</a></li>
+</ul>
+</pre>
+
+
+<pre>
+Al finalizar el tiempo, se muestran tres botones siendo: siguiente, respuesta y robo
+</pre>
+
+<img src="img/5.png">
+
+<pre>
+<h1>Respuesta</h1>
+Mostrara la respuesta esperada para la pregunta en curso y dejara solamente acctivo el boton de siguiente
+<img src="img/6.png">
+</pre>
+
+<pre>
+<h1>siguiente</h1>
+Este boton permite continuar con la ronda, dando paso al turno del siguiente equipo.
+Y mostrando un aviso con el numero de la ronda actual, cuando una de estas se finalice
+</pre>
+
+<pre>
+En caso de que se presente una inconformidad por parte del equipo, o bien, la pregunta 
+presentada sea demasiado larga para leer en el tiempo establecido, el administrador puede
+pulsar sobre la opcion de aclaracion para que el tiempo se detenga hasta que este boton vuelva a ser presionado
+</pre>
+
+<pre>El proceso se repite hasta que alguno de los equipos alcance un total de 10 puntos.</pre>
+</div>
+<br><br><br><br><br><br><br>
+<div id="Robo" align="center">
+<pre><h1>Robo de puntos</h1>
+Despues de haberse marcado la pregunta como respuesta equivocada y dar click en el boton de robo se
+presentara una pantalla con un contador regresivo de 3, esto como medida interna para dar mayor 
+equidad en la elección del participante que va a robar
+
+Un combo contienen la lista de equipo que pueden hacer el robo
+
+Una vez seleccionado el equipo que realizara el robo, el contador comenzara a correr.
+El equipo tiene 15 segundos para responder a la pregunta, la cual no sera mostrada
+hasta que se marque la opcion de correcto o incorrecto.
+
+<img src="img/7.png">
+
+Posterior a esto se vulve a la pantalla de juego para continuar o iniciar una nueva ronda
+
+<a href="index.html">Regresar</a>
+
+
+
+</pre>
+</div>
+
+</body>
+</html>

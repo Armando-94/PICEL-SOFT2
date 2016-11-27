@@ -38,24 +38,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Italic);
-            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 26);
+            this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Trivia";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Italic);
-            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(13, 47);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 26);
+            this.label2.Size = new System.Drawing.Size(45, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Equipos";
             // 
@@ -68,7 +62,7 @@
             this.cmbTrivia.Items.AddRange(new object[] {
             "Trivia A",
             "Trivia B"});
-            this.cmbTrivia.Location = new System.Drawing.Point(98, 13);
+            this.cmbTrivia.Location = new System.Drawing.Point(80, 13);
             this.cmbTrivia.Name = "cmbTrivia";
             this.cmbTrivia.Size = new System.Drawing.Size(121, 21);
             this.cmbTrivia.TabIndex = 2;
@@ -98,7 +92,7 @@
             "CDS-SILVER",
             "REMEDIAL SQUAD",
             "LITERATOS"});
-            this.cmbEquipos.Location = new System.Drawing.Point(98, 52);
+            this.cmbEquipos.Location = new System.Drawing.Point(80, 44);
             this.cmbEquipos.Name = "cmbEquipos";
             this.cmbEquipos.Size = new System.Drawing.Size(121, 21);
             this.cmbEquipos.TabIndex = 3;
@@ -106,24 +100,19 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.Transparent;
-            this.btnAgregar.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Italic);
-            this.btnAgregar.ForeColor = System.Drawing.Color.White;
-            this.btnAgregar.Image = global::Trivia_Literaria.Properties.Resources.black_glossy_button_hi;
             this.btnAgregar.Location = new System.Drawing.Point(232, 28);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(114, 45);
+            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 4;
             this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // frmAgregarEquiposTrivia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Trivia_Literaria.Properties.Resources._12504403_cortinas_luminosas_en_el_concepto_de_teatro;
-            this.ClientSize = new System.Drawing.Size(375, 110);
+            this.ClientSize = new System.Drawing.Size(327, 81);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.cmbEquipos);
             this.Controls.Add(this.cmbTrivia);

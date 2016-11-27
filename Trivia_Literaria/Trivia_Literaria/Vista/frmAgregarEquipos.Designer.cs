@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAgregarEquipos));
             this.lblTrivia = new System.Windows.Forms.Label();
             this.cmbTrivia = new System.Windows.Forms.ComboBox();
             this.txtEquipo = new System.Windows.Forms.TextBox();
@@ -36,10 +35,6 @@
             this.txtIntegrantes = new System.Windows.Forms.TextBox();
             this.lblIntegrantes = new System.Windows.Forms.Label();
             this.gbEquipo = new System.Windows.Forms.GroupBox();
-            this.txtLibro6 = new System.Windows.Forms.TextBox();
-            this.lblLibro6 = new System.Windows.Forms.Label();
-            this.txtNombre6 = new System.Windows.Forms.TextBox();
-            this.lblNom6 = new System.Windows.Forms.Label();
             this.txtLibro5 = new System.Windows.Forms.TextBox();
             this.lblLibro5 = new System.Windows.Forms.Label();
             this.txtNombre5 = new System.Windows.Forms.TextBox();
@@ -60,21 +55,19 @@
             this.lblLibro1 = new System.Windows.Forms.Label();
             this.txtNombre1 = new System.Windows.Forms.TextBox();
             this.lblNom1 = new System.Windows.Forms.Label();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.gbEquipo.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTrivia
             // 
             this.lblTrivia.AutoSize = true;
-            this.lblTrivia.BackColor = System.Drawing.Color.Transparent;
-            this.lblTrivia.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Italic);
-            this.lblTrivia.ForeColor = System.Drawing.Color.White;
+            this.lblTrivia.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTrivia.Location = new System.Drawing.Point(13, 9);
             this.lblTrivia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTrivia.Name = "lblTrivia";
-            this.lblTrivia.Size = new System.Drawing.Size(60, 26);
+            this.lblTrivia.Size = new System.Drawing.Size(48, 18);
             this.lblTrivia.TabIndex = 0;
             this.lblTrivia.Text = "Trivia";
             // 
@@ -104,20 +97,18 @@
             // lblEquipo
             // 
             this.lblEquipo.AutoSize = true;
-            this.lblEquipo.BackColor = System.Drawing.Color.Transparent;
-            this.lblEquipo.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Italic);
-            this.lblEquipo.ForeColor = System.Drawing.Color.White;
+            this.lblEquipo.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEquipo.Location = new System.Drawing.Point(13, 47);
             this.lblEquipo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEquipo.Name = "lblEquipo";
-            this.lblEquipo.Size = new System.Drawing.Size(71, 26);
+            this.lblEquipo.Size = new System.Drawing.Size(55, 18);
             this.lblEquipo.TabIndex = 6;
             this.lblEquipo.Text = "Equipo";
             // 
             // txtIntegrantes
             // 
             this.txtIntegrantes.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIntegrantes.Location = new System.Drawing.Point(404, 85);
+            this.txtIntegrantes.Location = new System.Drawing.Point(176, 82);
             this.txtIntegrantes.Margin = new System.Windows.Forms.Padding(4);
             this.txtIntegrantes.Name = "txtIntegrantes";
             this.txtIntegrantes.Size = new System.Drawing.Size(41, 25);
@@ -128,23 +119,16 @@
             // lblIntegrantes
             // 
             this.lblIntegrantes.AutoSize = true;
-            this.lblIntegrantes.BackColor = System.Drawing.Color.Transparent;
-            this.lblIntegrantes.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Italic);
-            this.lblIntegrantes.ForeColor = System.Drawing.Color.White;
+            this.lblIntegrantes.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIntegrantes.Location = new System.Drawing.Point(13, 85);
             this.lblIntegrantes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIntegrantes.Name = "lblIntegrantes";
-            this.lblIntegrantes.Size = new System.Drawing.Size(211, 26);
+            this.lblIntegrantes.Size = new System.Drawing.Size(155, 18);
             this.lblIntegrantes.TabIndex = 12;
             this.lblIntegrantes.Text = "Número de Integrantes";
             // 
             // gbEquipo
             // 
-            this.gbEquipo.BackColor = System.Drawing.Color.LightCoral;
-            this.gbEquipo.Controls.Add(this.txtLibro6);
-            this.gbEquipo.Controls.Add(this.lblLibro6);
-            this.gbEquipo.Controls.Add(this.txtNombre6);
-            this.gbEquipo.Controls.Add(this.lblNom6);
             this.gbEquipo.Controls.Add(this.txtLibro5);
             this.gbEquipo.Controls.Add(this.lblLibro5);
             this.gbEquipo.Controls.Add(this.txtNombre5);
@@ -167,45 +151,14 @@
             this.gbEquipo.Controls.Add(this.lblNom1);
             this.gbEquipo.Location = new System.Drawing.Point(16, 125);
             this.gbEquipo.Name = "gbEquipo";
-            this.gbEquipo.Size = new System.Drawing.Size(407, 334);
+            this.gbEquipo.Size = new System.Drawing.Size(407, 258);
             this.gbEquipo.TabIndex = 19;
             this.gbEquipo.TabStop = false;
             this.gbEquipo.Text = "Nombre del equipo";
             // 
-            // txtLibro6
-            // 
-            this.txtLibro6.Location = new System.Drawing.Point(282, 269);
-            this.txtLibro6.Name = "txtLibro6";
-            this.txtLibro6.Size = new System.Drawing.Size(100, 25);
-            this.txtLibro6.TabIndex = 23;
-            // 
-            // lblLibro6
-            // 
-            this.lblLibro6.AutoSize = true;
-            this.lblLibro6.Location = new System.Drawing.Point(230, 272);
-            this.lblLibro6.Name = "lblLibro6";
-            this.lblLibro6.Size = new System.Drawing.Size(45, 18);
-            this.lblLibro6.TabIndex = 22;
-            this.lblLibro6.Text = "Libro";
-            // 
-            // txtNombre6
-            // 
-            this.txtNombre6.Location = new System.Drawing.Point(77, 269);
-            this.txtNombre6.Name = "txtNombre6";
-            this.txtNombre6.Size = new System.Drawing.Size(100, 25);
-            this.txtNombre6.TabIndex = 21;
-            // 
-            // lblNom6
-            // 
-            this.lblNom6.AutoSize = true;
-            this.lblNom6.Location = new System.Drawing.Point(13, 272);
-            this.lblNom6.Name = "lblNom6";
-            this.lblNom6.Size = new System.Drawing.Size(58, 18);
-            this.lblNom6.TabIndex = 20;
-            this.lblNom6.Text = "Nombre";
-            // 
             // txtLibro5
             // 
+            this.txtLibro5.Enabled = false;
             this.txtLibro5.Location = new System.Drawing.Point(282, 223);
             this.txtLibro5.Name = "txtLibro5";
             this.txtLibro5.Size = new System.Drawing.Size(100, 25);
@@ -222,6 +175,7 @@
             // 
             // txtNombre5
             // 
+            this.txtNombre5.Enabled = false;
             this.txtNombre5.Location = new System.Drawing.Point(77, 223);
             this.txtNombre5.Name = "txtNombre5";
             this.txtNombre5.Size = new System.Drawing.Size(100, 25);
@@ -238,6 +192,7 @@
             // 
             // txtLibro4
             // 
+            this.txtLibro4.Enabled = false;
             this.txtLibro4.Location = new System.Drawing.Point(282, 177);
             this.txtLibro4.Name = "txtLibro4";
             this.txtLibro4.Size = new System.Drawing.Size(100, 25);
@@ -254,6 +209,7 @@
             // 
             // txtNombre4
             // 
+            this.txtNombre4.Enabled = false;
             this.txtNombre4.Location = new System.Drawing.Point(77, 177);
             this.txtNombre4.Name = "txtNombre4";
             this.txtNombre4.Size = new System.Drawing.Size(100, 25);
@@ -270,6 +226,7 @@
             // 
             // txtLibro3
             // 
+            this.txtLibro3.Enabled = false;
             this.txtLibro3.Location = new System.Drawing.Point(282, 129);
             this.txtLibro3.Name = "txtLibro3";
             this.txtLibro3.Size = new System.Drawing.Size(100, 25);
@@ -286,6 +243,7 @@
             // 
             // txtNombre3
             // 
+            this.txtNombre3.Enabled = false;
             this.txtNombre3.Location = new System.Drawing.Point(77, 129);
             this.txtNombre3.Name = "txtNombre3";
             this.txtNombre3.Size = new System.Drawing.Size(100, 25);
@@ -364,40 +322,36 @@
             this.lblNom1.TabIndex = 0;
             this.lblNom1.Text = "Nombre";
             // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Italic);
-            this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
-            this.btnCancelar.Location = new System.Drawing.Point(249, 466);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(110, 39);
-            this.btnCancelar.TabIndex = 20;
-            this.btnCancelar.Text = "&Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
-            // 
             // btnAceptar
             // 
-            this.btnAceptar.Font = new System.Drawing.Font("Candara", 15.75F, System.Drawing.FontStyle.Italic);
-            this.btnAceptar.ForeColor = System.Drawing.Color.White;
-            this.btnAceptar.Image = ((System.Drawing.Image)(resources.GetObject("btnAceptar.Image")));
-            this.btnAceptar.Location = new System.Drawing.Point(81, 466);
+            this.btnAceptar.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.Location = new System.Drawing.Point(47, 390);
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(110, 39);
+            this.btnAceptar.Size = new System.Drawing.Size(112, 32);
             this.btnAceptar.TabIndex = 21;
             this.btnAceptar.Text = "&Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(249, 390);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(112, 32);
+            this.btnCancelar.TabIndex = 22;
+            this.btnCancelar.Text = "&Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_2);
+            // 
             // frmAgregarEquipos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(458, 115);
+            this.BackgroundImage = global::Trivia_Literaria.Properties.Resources.DSC_0078;
+            this.ClientSize = new System.Drawing.Size(458, 113);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.gbEquipo);
@@ -449,11 +403,7 @@
         private System.Windows.Forms.Label lblLibro1;
         private System.Windows.Forms.TextBox txtNombre1;
         private System.Windows.Forms.Label lblNom1;
-        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnAceptar;
-        private System.Windows.Forms.TextBox txtLibro6;
-        private System.Windows.Forms.Label lblLibro6;
-        private System.Windows.Forms.TextBox txtNombre6;
-        private System.Windows.Forms.Label lblNom6;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }
